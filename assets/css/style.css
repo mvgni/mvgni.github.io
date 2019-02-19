@@ -780,7 +780,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	}
 
 	#slide3{
-		background: url('/assets/img/mtn.jpg') 50% 0 no-repeat fixed;
+		background: url('/assets/img/mtn-smallest.jpg') 50% 0 no-repeat fixed;
 		color: #fff;
 		height: 85%;
 		background-size: cover;
@@ -939,6 +939,15 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		overflow: hidden;
 		width: 100%;
 		height: auto;
+	}
+
+	#slide3{
+		background: url('/assets/img/mtn-smaller.jpg') 50% 0 no-repeat fixed;
+		color: #fff;
+		height: 75%;
+		background-size: cover;
+		width: 100%;
+		background-attachment: fixed;
 	}
 
 	.content2{
