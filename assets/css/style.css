@@ -778,12 +778,13 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		width: 100%;
 	}
 
-	#slide3{
+	#slide3:before{
 		background: url('/assets/img/mtn.jpg') 50% 0 no-repeat fixed;
 		color: #fff;
-		height: 85%;
+		height: 100%;
 		background-size: cover;
 		width: 100%;
+		position: fixed;
 	}
 
 	#slide4{
