@@ -296,12 +296,12 @@ h3{
 .content2{
 	width: 60%;
 	margin: 0 auto;
-	padding: 15vh 0 15vh 0;
+	padding: 30vh 0 30vh 0;
 }
 
 .content4{
 	margin: 0 auto;
-	padding-top: 15vh;
+	padding: 30vh 0 30vh 0;
 }
 
 .clear{ 
@@ -494,7 +494,7 @@ h3{
 #slide4{
 	background-color:#fff;
 	color: #333333;
-	height: 75%;
+	height: auto;
 	/*padding: 200px 0;*/
 	overflow: hidden;
 	margin: 0 auto;
