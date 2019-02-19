@@ -489,6 +489,7 @@ h3{
 	height: 75%;
 	background-size: cover;
 	width: 100%;
+	background-attachment: fixed;
 }
 
 #slide4{
@@ -778,13 +779,13 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		width: 100%;
 	}
 
-	#slide3:before{
+	#slide3{
 		background: url('/assets/img/mtn.jpg') 50% 0 no-repeat fixed;
 		color: #fff;
-		height: 100%;
+		height: 85%;
 		background-size: cover;
 		width: 100%;
-		position: fixed;
+		background-attachment: fixed;
 	}
 
 	#slide4{
