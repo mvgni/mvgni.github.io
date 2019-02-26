@@ -77,12 +77,20 @@ $('.menu-home').click(function() {
 });
 
 $('.menu-portfolio').click(function() {
-  if (pathname == '/index.html') {
+  if (pathname == '/index.html' || pathname != '/portfolio.html') {
     location.href = '/portfolio.html';
     closeMenu();
   } else {
     location.href = '#'
     closeMenu();
+  }
+});
+
+$(document).ready(function() {
+  var isMobile = window.matchMedia('only screen and (max-width: 760px)').matches;
+
+  if (isMobile) {
+    $('.card , .card-text-overlay , .cardimgcover').addClass('noanimated');
   }
 });
 

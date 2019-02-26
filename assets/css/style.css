@@ -868,6 +868,16 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		padding-top: 5%;
 	}
 
+	.noanimated {
+		-webkit-animation-duration: none;
+		animation-duration: none;
+		-webkit-animation-fill-mode: none;
+		animation-fill-mode: none;
+		-webkit-transition: none;
+		transition: none;
+		box-shadow: none;
+	}
+
 	
 
 
