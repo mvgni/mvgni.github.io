@@ -94,6 +94,14 @@ $(document).ready(function() {
   }
 });
 
+$('.cardimgcover').click(function() {
+  $('body').css('overflow','hidden');
+});
+
+$('.close').click(function() {
+  $('body').css('overflow','scroll');
+});
+
 /* $('.cardimgcover').hover(function() {
   $('.card-text-overlay').css('opacity', '1');
 }); */
