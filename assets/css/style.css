@@ -832,7 +832,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	}
 	
 	.modal-content{
-		max-height: 80%;
+		max-height: 70%;
 		overflow: auto;
 		padding: 0 15%;
 		text-align: left;
