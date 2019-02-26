@@ -4,8 +4,8 @@ web dev portfolio project
 
 to add:
 - react framework
-- an actual portfolio page lol
+- add images to portfolio page
 - resume
 
 known issues:
-- parallax lag on firefox
+- parallax lag on firefox (sometimes?)
