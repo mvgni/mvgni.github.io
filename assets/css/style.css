@@ -1098,6 +1098,10 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	.modal h2 {
 		padding-top: 25%;
 	}
+
+	.modal-content {
+		padding: 0 5%;
+	}
 	
 	
     
