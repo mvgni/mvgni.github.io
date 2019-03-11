@@ -833,7 +833,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	
 	.modal-content{
 		max-height: 70%;
-		overflow: scroll;
+		overflow-y: scroll;
 		padding: 0 15%;
 		text-align: left;
 		font-family: Avenir, Helvetica, sans-serif;
