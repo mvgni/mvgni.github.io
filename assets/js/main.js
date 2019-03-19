@@ -99,7 +99,7 @@ $('.cardimgcover').click(function() {
 });
 
 $('.close').click(function() {
-  $('body').css('overflow','scroll');
+  $('body').css('overflow-y','scroll');
 });
 
 /* $('.cardimgcover').hover(function() {
