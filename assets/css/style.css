@@ -879,7 +879,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		box-shadow: none;
 	}
 
-	.infographicvid, .kohlsvid {
+	.infographicvid, .kohlsvid, .avavid {
 		width: 100%;
 		padding-top:5%;
 	}
