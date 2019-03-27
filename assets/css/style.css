@@ -300,7 +300,7 @@ h3{
 }
 
 .content2{
-	width: 60%;
+	/* width: 80%; */
 	margin: 0 auto;
 	padding: 30vh 0 30vh 0;
 }
@@ -358,7 +358,7 @@ h3{
 
 .text {
 	font-weight: normal;
-	font-size: 20px;
+	font-size: 18px;
 	text-align: left;
 	font-family: Avenir, Helvetica, sans-serif;
 }
@@ -377,7 +377,7 @@ h3{
 
 .text-alt {
 	font-weight: normal;
-	font-size: 20px;
+	font-size: 18px;
 	text-align: center;
 	font-family: sans-serif;
 }
@@ -464,6 +464,9 @@ h3{
 
 .flex-container {
 	display: flex;
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
 }
 
 
@@ -1117,7 +1120,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 @media only screen and (min-width: 401px) and (max-width: 1024px) {
 	.text {
 		font-weight: normal;
-		font-size: 20px;
+		font-size: 18px;
 		text-align: left;
 		font-family: Avenir, sans-serif;
 	}
@@ -1154,12 +1157,19 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	}
 
 	.textcontainer {
-		width: 60%;
+		width: 100%;
 		margin-right: 5%;
+		margin-bottom: 10%;
 	}
 
 	#graphic {
 		width: 100%;
+	}
+
+	.flex-container {
+		flex-direction: column;
+		width: 80%;
+		margin: 0 auto;
 	}
 
 }
