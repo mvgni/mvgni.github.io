@@ -536,7 +536,7 @@
 		wheelEvent = "mousewheel";
 
 	if (wheelEvent && isSupportedBrowser) {
-		addEvent(wheelEvent, wheel);
+		addEvent(wheelEvent, wheel, {passive: false});
 		addEvent("mousedown", mousedown);
 		addEvent("load", init);
 	}

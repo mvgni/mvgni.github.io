@@ -1,0 +1,23 @@
+{
+  "name": "mvgni.github.io",
+  "version": "1.0.0",
+  "description": "<h3><a href=\"https://mvgni.github.io\">mvgni.github.io</a></h3>",
+  "main": "main.js",
+  "dependencies": {
+    "jquery-parallax.js": "^1.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvgni/mvgni.github.io.git"
+  },
+  "author": "Connor Thorson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mvgni/mvgni.github.io/issues"
+  },
+  "homepage": "https://github.com/mvgni/mvgni.github.io#readme"
+}
