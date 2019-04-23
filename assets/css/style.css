@@ -83,6 +83,8 @@ ul.social li {
   z-index: 2;
 	cursor: pointer;
 	z-index: 3;
+	height: 40px;
+	width: 40px;
 }
 
 .line {
@@ -90,13 +92,27 @@ ul.social li {
   height: 2px;
   background: #fff;
 	margin-bottom: 13px;
+	margin-top: 13px;
 }
 
 .line-dark {
   width: 2.5rem;
   height: 2px;
   background: #000;
-  margin-bottom: 13px;
+	margin-bottom: 13px;
+	margin-top: 13px;
+}
+
+.hamburger .line.active:nth-child(1), .hamburger .line-dark.active:nth-child(1)  {
+	transform: rotate(45deg);
+	position: absolute;
+	top: 7px;
+}
+
+.hamburger .line.active:nth-child(2), .hamburger .line-dark.active:nth-child(2)  {
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 7px;
 }
 
 .menu {

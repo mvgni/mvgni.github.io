@@ -7,12 +7,14 @@ var menuOpen;
 function closeMenu(){
     menu.css("left", "-320px");
     line.css("background", "#fff");
+    $('.line, .line-dark').removeClass('active');
     menuOpen = false;
 };
 
 function openMenu(){
     menu.css("left", "0px");
     line.css("background", "#FFF");
+    $('.line, .line-dark').addClass('active');
     menuOpen = true;
 };
 
@@ -21,8 +23,10 @@ $(document).ready(function(){
     function toggleMenu(){
       if (menuOpen) {
         closeMenu();
+        
       } else {
         openMenu();
+        
       }
     }
 
@@ -105,7 +109,11 @@ $('.close').click(function() {
 /* $('.cardimgcover').hover(function() {
   $('.card-text-overlay').css('opacity', '1');
 }); */
-
+/* 
+$('.hamburger').click(function() {
+  $('.line').toggleClass('active');
+});
+ */
 
 
 
