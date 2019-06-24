@@ -773,7 +773,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
 	.skills-container {
 		display: flex;
-		width: 80%;
+		width: 80vw;
 		text-align: center;
 		margin: 0 auto;
 	}
@@ -963,13 +963,13 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
 
 /* phone */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     
     #connor {
 	font-family: "Poiret One", sans-serif;
 	font-size: 60px;
 	text-align: center;
-	padding-top: 62%;
+	/* padding-top: 62%; */
 	
 	-webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2.5s; /* Firefox < 16 */
@@ -1011,7 +1011,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
 	#slide3 {
 		background: transparent;
-		height: 75%;
+		height: 75vh;
 		width: 100%;
 	}
 
@@ -1134,11 +1134,12 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	}
 
 	.skills-container {
-		flex-flow: wrap;
+    flex-flow: wrap;
+    /* flex-direction: column; */
 	}
 
 	.footer-content {
-		flex-flow: column;
+		flex-direction: column;
 	}
 
 	.footer-area-1, .footer-area-2, .footer-area-3 {
@@ -1200,7 +1201,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
 	#slide3 {
 		background: transparent;
-		height: 75%;
+		height: 75vh;
 		width: 100%;
 	}
 
@@ -1224,7 +1225,11 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		flex-direction: column;
 		width: 80%;
 		margin: 0 auto;
-	}
+  }
+  
+  .skills-container {
+    width: 100vw;
+  }
 
 }
 
