@@ -88,8 +88,8 @@ export default {
 </script>
 
 <style scoped>
-    .slidewrap {
+    /* .slidewrap {
         height: 100vh;
         width: 100%;
-    }
+    } */
 </style>
