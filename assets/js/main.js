@@ -80,15 +80,15 @@ $('.menu-home').click(function() {
   }
 });
 
-$('.menu-portfolio').click(function() {
-  if (pathname == '/index.html' || pathname != '/portfolio.html') {
-    location.href = '/portfolio.html';
+/* $('.menu-portfolio').click(function() {
+  if (pathname == '/' || pathname != '/portfolio') {
+    
     closeMenu();
   } else {
-    location.href = '#'
+    
     closeMenu();
   }
-});
+}); */
 
 $(document).ready(function() {
   var isMobile = window.matchMedia('only screen and (max-width: 760px)').matches;
