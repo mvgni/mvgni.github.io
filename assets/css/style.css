@@ -1059,7 +1059,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	}
 
 	#slide-works {
-		display: none;
+		display: none !important;
 	}
 
 	.content2{
