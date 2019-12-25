@@ -18,31 +18,31 @@ function openMenu(){
     menuOpen = true;
 };
 
-$(document).ready(function(){
 
-    function toggleMenu(){
-      if (menuOpen) {
+
+function toggleMenu(){
+  if (menuOpen) {
+    closeMenu();
+    
+  } else {
+    openMenu();
+    
+  }
+}
+
+hamburger.on({
+  click: function(){
+    toggleMenu();
+  }
+})
+
+link.on({
+    click: function(){
         closeMenu();
-        
-      } else {
-        openMenu();
-        
-      }
     }
+})
 
-    hamburger.on({
-      click: function(){
-        toggleMenu();
-      }
-    })
-    
-    link.on({
-        click: function(){
-            closeMenu();
-        }
-    })
-    
-  });
+
   
   //$('a[href*=#]')
   
@@ -116,9 +116,61 @@ $('.hamburger').click(function() {
  */
 
 
+var $cursor = $(".cursor"),
+$overlay = $(".project-overlay");
+
+function moveCircle(e) {
+TweenLite.to($cursor, 0.5, {
+  css: {
+    left: e.pageX,
+    top: e.pageY
+  },
+  delay: 0.03
+});
+}
+$(".p-1").hover(function() {
+  $(".cursor").css({ "background-image": "url(pnt-cover.png)" });
+});
+
+$(".p-2").hover(function() {
+  $(".cursor").css({ "background-image": "url(disc-cover.png)" });
+});
+
+$(".p-3").hover(function() {
+  $(".cursor").css({ "background-image": "url(unite-cover.png)" });
+});
+
+$(".p-4").hover(function() {
+  $(".cursor").css({ "background-image": "url(vouloir-cover.png)" });
+});
+
+var flag = false;
+$($overlay).mousemove(function() {
+  flag = true;
+  TweenLite.to($cursor, 0.3, { scale: 1, autoAlpha: 1 });
+  $($overlay).on("mousemove", moveCircle);
+});
+
+$($overlay).mouseout(function() {
+  flag = false;
+  TweenLite.to($cursor, 0.3, { scale: 0.1, autoAlpha: 0 });
+});
 
 
+$('.p-1').click(function() {
+  window.location.href="portfolio.html#pnt-modal"
+})
 
+$('.p-2').click(function() {
+  window.location.href="portfolio.html#disc-modal"
+})
 
+$('.p-3').click(function() {
+  window.location.href="portfolio.html#unite-modal"
+})
+
+$('.p-4').click(function() {
+  window.location.href="portfolio.html#vou-modal"
+})
 
     

@@ -7,6 +7,7 @@
 body{
 	margin:0;
 	padding:0;
+	overflow-x: hidden;
 /*    width:100%;*/
 /*    height: 100vh;*/
 }
@@ -321,7 +322,7 @@ h3{
 	padding: 30vh 0 30vh 0;
 }
 
-.content4{
+.content4, .content-works{
 	margin: 0 auto;
 	padding: 30vh 0 30vh 0;
 }
@@ -374,7 +375,7 @@ h3{
 
 .text {
 	font-weight: normal;
-	font-size: 18px;
+	font-size: 20px;
 	text-align: left;
 	font-family: Avenir, Helvetica, sans-serif;
 }
@@ -525,6 +526,16 @@ h3{
 	width: 100%;
     display: flex;
     align-items: center;
+}
+
+#slide-works{
+	background-color:black;
+	color: white;
+	height: auto;
+	/*padding: 200px 0;*/
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
 }
 
 #slide4{
@@ -851,11 +862,11 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		font-family: Avenir, Helvetica, sans-serif;
 		color: #333;
 		margin-top: 0;
-		padding-top: 8%;
+		padding-top: 5%;
 	}
 	
 	.modal-content{
-		max-height: 70%;
+		max-height: 80%;
 		overflow-y: scroll;
 		padding: 0 15%;
 		text-align: left;
@@ -907,8 +918,63 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		padding-top:5%;
 	}
 
-	
+	.project-list {
+		text-transform: lowercase;
+	}
 
+	.project:hover {
+		cursor: pointer;
+	}
+	
+	.project-categ {
+		font-weight: lighter;
+	}
+
+	.project-title {
+		font-weight: lighter;
+	}
+	
+	.cursor {
+		position: absolute;
+		width: 600px;
+		height: 400px;
+		top: 50%;
+		left: 50%;
+		transform: scale(0.1);
+		opacity: 0;
+		margin: -100px 0 0 -100px;
+		background: url(../img/pnt-cover.png) no-repeat 50% 50%;
+		background-size: cover;
+		z-index: 1;
+	}
+	
+	.works-wrapper {
+		width: 80%;
+		margin: 100px auto;
+		height: 100%;
+	}
+	
+	.project {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		padding: 12px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-basis: 1;
+		position: relative;
+		z-index: 2;
+		color: white;
+		mix-blend-mode: difference;
+	}
+	
+	.project-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
 
 
 
@@ -990,6 +1056,10 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		overflow: hidden;
 		margin: 0 auto;
 		width: 100%;
+	}
+
+	#slide-works {
+		display: none;
 	}
 
 	.content2{
@@ -1125,11 +1195,16 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	}
 
 	.modal h2 {
-		padding-top: 25%;
+		padding-top: 20%;
+		font-size: 30px;
 	}
 
 	.modal-content {
 		padding: 0 5%;
+	}
+
+	.modal-text {
+		font-size: 1em;
 	}
 	
 	
