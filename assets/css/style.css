@@ -150,8 +150,9 @@ ul.social li {
 .hmenu {
     text-decoration: none;
     font-size: 1.5em;
-    font-family: Quicksand, Helvetica, sans-serif;
-    color: black;
+    font-family: Avenir, Helvetica, sans-serif;
+	color: black;
+	font-weight: lighter;
 }
 
 /* END HAMBURGER */
@@ -278,15 +279,21 @@ p {
 
 #footer {
 	width: 100%;
-/* 	height: 75px; */
+	height: 100px;
 	background: #262626;
-	
+	position: fixed;
+	bottom: 0;
+	z-index: -999;
 }
 
 #footer a {
 	color: white;
 	font-family: sans-serif;
 	text-decoration: none;
+}
+
+#footer .content {
+	height: 100%;
 }
 
 h2{
@@ -314,6 +321,11 @@ h3{
 .content{ 
 	margin: 0 auto; 
 	width: 100%; 
+	/* height: 100%; */
+}
+
+main.content {
+	margin-bottom: 100px;
 }
 
 .content2{
@@ -433,9 +445,10 @@ h3{
 } */
 
 #connor {
-	font-family: "Poiret One", Helvetica, sans-serif;
+	font-family: Avenir, Helvetica, sans-serif;
 	font-size: 65px;
 	text-align: center;
+	font-weight:lighter;
 /* 	padding-top: 40vh;
  */	
 	-webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
@@ -475,9 +488,6 @@ h3{
 }	
 
 
-#graphic {
-	
-}
 
 .flex-container {
 	display: flex;
@@ -546,7 +556,14 @@ h3{
 	overflow: hidden;
 	margin: 0 auto;
 	width: 100%;
+	margin-bottom: 100px;
 }
+
+#slide2 .text {
+	font-size: 25px;
+}
+
+
 
 /* -----------------FORM----------------- */
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
@@ -715,6 +732,9 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	.footer-content{
 		display: flex;
 		width: 100%;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.footer-area-1 {
@@ -745,7 +765,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		text-align: center;
 		margin:0;
 		font-family: Avenir, Helvetica, sans-serif;
-		padding-bottom: 60px;
+		padding-bottom: 15vh;
 	}
 
 	.skills-container {
@@ -779,7 +799,9 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
 	.card-container {
 		text-align: center;
-		margin-bottom: 15vh;
+		padding-bottom: 15vh;
+		margin-bottom: 100px;
+		background: white;
 	}
 
 	.card {
@@ -950,7 +972,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	
 	.works-wrapper {
 		width: 80%;
-		margin: 100px auto;
+		margin: 0 auto;
 		height: 100%;
 	}
 	
@@ -998,7 +1020,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 @media only screen and (max-width: 600px) {
     
     #connor {
-	font-family: "Poiret One", sans-serif;
+	font-family: Avenir, sans-serif;
 	font-size: 60px;
 	text-align: center;
 /*    padding-top: 62%;*/
@@ -1056,6 +1078,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		overflow: hidden;
 		margin: 0 auto;
 		width: 100%;
+		margin-bottom: 150px;
 	}
 
 	#slide-works {
@@ -1152,19 +1175,19 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	}
 
 	.footer-area-1 > p, .footer-area-2 > p {
-		font-size: 11px;
+		font-size: 12px;
 	}
 
 	ul.social > li {
-		padding: 0 3px;
-		font-size: 12px;
+		padding: 0 10px;
+		font-size: 17px;
 	}
 
 	.flex-container {
 		flex-flow: wrap;
 	}
 
-	#graphic {
+	.graphic {
 		width: 100%;
 		margin-top: 10%;
 	}
@@ -1207,7 +1230,13 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		font-size: 1em;
 	}
 	
-	
+	#footer {
+		height: 150px;
+	}
+
+	main.content {
+		margin-bottom: 150px;
+	}
     
 }
 
@@ -1257,7 +1286,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		margin-bottom: 10%;
 	}
 
-	#graphic {
+	.graphic {
 		width: 100%;
 	}
 
