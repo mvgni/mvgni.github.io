@@ -1079,9 +1079,9 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		background: url('/assets/img/leaves.PNG') 50% 0 no-repeat fixed;
 		color: #fff;
 		height: 75vh;
-		/* background-size: cover; */
+		background-size: cover;
 		width: 100%;
-		background-attachment: fixed !important;
+		background-attachment: fixed;
 	}
 
 	/* #slide3 {
@@ -1280,20 +1280,20 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		height: auto;
 	}
 
-	/* #slide3{
-		background: url('/assets/img/mtn-smaller.jpg') 50% 0 no-repeat fixed;
+	#slide3{
+		background: url('/assets/img/leaves.PNG') 50% 0 no-repeat fixed;
 		color: #fff;
-		height: 75%;
+		height: 75vh;
 		background-size: cover;
 		width: 100%;
 		background-attachment: fixed;
-	} */
+	}
 
-	#slide3 {
+	/* #slide3 {
 		background: transparent;
 		height: 75vh;
 		width: 100%;
-	}
+	} */
 
 	.content2{
 		width: 80%;
