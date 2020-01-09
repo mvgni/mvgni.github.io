@@ -532,7 +532,7 @@ main.content {
 	width: 100%;
 }
 
-#slide3{
+/* #slide3{
 	background: url('/assets/img/leaves.PNG') 50% 0 no-repeat fixed;
 	color: #fff;
 	height: 75vh;
@@ -541,15 +541,15 @@ main.content {
 	background-attachment: fixed;
 	display: flex;
 	align-items: center;
-}
+} */
 
-/* #slide3 {
+#slide3 {
 	background: transparent;
 	height: 75vh;
 	width: 100%;
     display: flex;
     align-items: center;
-} */
+}
 
 #slide-works{
 	background-color:black;
@@ -1075,20 +1075,20 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		width: 100%;
 	}
 
-	#slide3{
+	/* #slide3{
 		background: url('/assets/img/leaves.PNG') 50% 0 no-repeat fixed;
 		color: #fff;
 		height: 75%;
 		background-size: cover;
 		width: 100%;
 		background-attachment: fixed;
-	}
+	} */
 
-	/* #slide3 {
+	#slide3 {
 		background: transparent;
 		height: 75vh;
 		width: 100%;
-	} */
+	}
 
 	#slide4{
 		background-color:#fff;
@@ -1280,20 +1280,20 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		height: auto;
 	}
 
-	#slide3{
+	/* #slide3{
 		background: url('/assets/img/leaves.PNG') 50% 0 no-repeat fixed;
 		color: #fff;
 		height: 75%;
 		background-size: cover;
 		width: 100%;
 		background-attachment: fixed;
-	}
+	} */
 
-	/* #slide3 {
+	#slide3 {
 		background: transparent;
 		height: 75vh;
 		width: 100%;
-	} */
+	}
 
 	.content2{
 		width: 80%;
