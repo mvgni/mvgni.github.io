@@ -1078,7 +1078,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	#slide3{
 		background: url('/assets/img/leaves.PNG') 50% 0 no-repeat fixed;
 		color: #fff;
-		height: 75vh;
+		height: 75%;
 		background-size: cover;
 		width: 100%;
 		background-attachment: fixed;
@@ -1283,7 +1283,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	#slide3{
 		background: url('/assets/img/leaves.PNG') 50% 0 no-repeat fixed;
 		color: #fff;
-		height: 75vh;
+		height: 75%;
 		background-size: cover;
 		width: 100%;
 		background-attachment: fixed;
