@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <!-- <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script> -->
+    
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">
-    <script src="/assets/js/jquery.min.js"></script>
+    <!-- <script src="/assets/js/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
-
+    <script src="/assets/js/parallax.min.js"></script>
+    <script src="/assets/js/lsPreloader.js"></script>
+   
     <title>connor thorson</title>
 
   </head>
   <body>
-
+  <div class="preload">
   <!-- header -->
     <header>
         <div class='hamburger' style="mix-blend-mode: difference;">
@@ -170,9 +172,25 @@
     </footer>
 
     
-    <script src="/assets/js/parallax.min.js"></script>
     <script src="/assets/js/main.js"></script>
     <script type="text/javascript" src="/assets/js/smoothscroll.js"></script>
-
+    <script>
+      $('.preload').lsPreloader({
+        backgroundColor: "#262626",
+        backgroundImage: "",
+        backgroundRepeat: "repeat",
+        logoImage: "",
+        progressShow: true,
+        progressColor: "#d1ccc4",
+        progressHeight: "13px",
+        progressPosition: "top",
+        percentShow: false,
+        percentFontFamily: "Avenir, sans-serif",
+        percentFontSize: "15px",
+        animationComplete: "fade",
+        minimumTime: .5
+      });</script>
+    
+    </div>
   </body>
 </html>
