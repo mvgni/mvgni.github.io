@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand);
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
-
+@import url('https://fonts.googleapis.com/css?family=Cormorant&display=swap');
 
 
 
@@ -251,7 +251,7 @@ h1.wd {
 	font-weight:lighter;
 	font-size:50px;
 	text-transform: lowercase;
-	text-align:left;
+	text-align:center;
 	margin:0;
 	font-family: Avenir, Helvetica, sans-serif;
 }
@@ -445,10 +445,10 @@ main.content {
 } */
 
 #connor {
-	font-family: Avenir, Helvetica, sans-serif;
-	font-size: 65px;
+	font-family: Cormorant, serif;
+	font-size: 100px;
 	text-align: center;
-	font-weight:lighter;
+	font-weight: bold;
 /* 	padding-top: 40vh;
  */	
 	-webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
@@ -456,6 +456,17 @@ main.content {
         -ms-animation: fadein 2.5s; /* Internet Explorer */
          -o-animation: fadein 2.5s; /* Opera < 12.1 */
             animation: fadein 2.5s;
+}
+
+#slide1 img {
+	filter: grayscale(100%);
+	opacity: 0.2;
+	position: absolute;
+	transform: translate(-50%, 50%);
+	left: 50%;
+	bottom: 50%;
+
+	
 }
 
 @keyframes fadein {
@@ -521,22 +532,24 @@ main.content {
 	width: 100%;
 }
 
-/* #slide3{
-	background: url('/assets/img/mtn.jpg') 50% 0 no-repeat fixed;
+#slide3{
+	background: url('/assets/img/leaves.PNG') 50% 0 no-repeat fixed;
 	color: #fff;
-	height: 75%;
+	height: 75vh;
 	background-size: cover;
 	width: 100%;
 	background-attachment: fixed;
-} */
+	display: flex;
+	align-items: center;
+}
 
-#slide3 {
+/* #slide3 {
 	background: transparent;
 	height: 75vh;
 	width: 100%;
     display: flex;
     align-items: center;
-}
+} */
 
 #slide-works{
 	background-color:black;
@@ -561,6 +574,10 @@ main.content {
 
 #slide2 .text {
 	font-size: 25px;
+}
+
+#slide2 .content2 {
+	padding: 40vh 0 40vh 0;
 }
 
 
@@ -1020,8 +1037,8 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 @media only screen and (max-width: 600px) {
     
     #connor {
-	font-family: Avenir, sans-serif;
-	font-size: 60px;
+	font-family: Cormorant, sans-serif;
+	font-size: 55px;
 	text-align: center;
 /*    padding-top: 62%;*/
 
@@ -1044,6 +1061,10 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		font-family: Avenir, sans-serif;
 	}
 
+	#slide1 img {
+		width: 75%;
+	}
+
 	#slide2{
 		background-color: #fff;
 		color: #333333;
@@ -1054,20 +1075,20 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		width: 100%;
 	}
 
-	/* #slide3{
-		background: url('/assets/img/mtn-smallest.jpg') 50% 0 no-repeat fixed;
+	#slide3{
+		background: url('/assets/img/leaves.PNG') 50% 0 no-repeat fixed;
 		color: #fff;
-		height: 85%;
+		height: 75vh;
 		background-size: cover;
 		width: 100%;
 		background-attachment: fixed;
-	} */
+	}
 
-	#slide3 {
+	/* #slide3 {
 		background: transparent;
 		height: 75vh;
 		width: 100%;
-	}
+	} */
 
 	#slide4{
 		background-color:#fff;
@@ -1085,7 +1106,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		display: none !important;
 	}
 
-	.content2{
+	.content2, #slide2 .content2{
 		width: 100%;
 		margin: 0 auto;
 		padding: 15vh 0 15vh 0;
