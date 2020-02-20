@@ -151,7 +151,7 @@ ul.social li {
 .hmenu {
     text-decoration: none;
     font-size: 1.5em;
-    font-family: Avenir, Helvetica, sans-serif;
+    font-family: Quicksand, Helvetica, sans-serif;
 	color: black;
 	font-weight: lighter;
 }
@@ -461,7 +461,7 @@ main.content {
 	font-family: Cormorant, serif;
 	font-size: 100px;
 	text-align: center;
-	font-weight: bold;
+	font-weight: lighter;
 /* 	padding-top: 40vh;
  */	
 	-webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
