@@ -1096,7 +1096,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		height: 75vh;
 		background-size: cover;
 		width: 100%;
-		background-attachment: fixed;
+		/* background-attachment: fixed; */
 	}
 
 	/* #slide3 {
@@ -1301,7 +1301,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		height: 75vh;
 		background-size: cover;
 		width: 100%;
-		background-attachment: fixed;
+		/* background-attachment: fixed; */
 	}
 
 	/* #slide3 {
