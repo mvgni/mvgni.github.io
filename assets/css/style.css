@@ -997,6 +997,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	
 	.project-categ {
 		font-weight: lighter;
+		text-align: right !important;
 	}
 
 	.project-title {
