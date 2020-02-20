@@ -83,7 +83,7 @@ ul.social li {
   margin: 50px;
   z-index: 2;
 	cursor: pointer;
-	z-index: 3;
+	z-index: 4;
 	height: 40px;
 	width: 40px;
 }
@@ -124,7 +124,7 @@ ul.social li {
   top: 0;
   left: -320px;
 	transition: left .1s;
-	z-index: 2;
+	z-index: 3;
 }
 
 .menu-item:first-child {
@@ -324,6 +324,14 @@ h3{
 	/* height: 100%; */
 }
 
+#slide1 .content {
+	display: flex;
+	place-items: center center;
+    align-items: center;
+	justify-content: center;
+	align-items: center;
+}
+
 main.content {
 	margin-bottom: 100px;
 }
@@ -455,16 +463,18 @@ main.content {
        -moz-animation: fadein 2.5s; /* Firefox < 16 */
         -ms-animation: fadein 2.5s; /* Internet Explorer */
          -o-animation: fadein 2.5s; /* Opera < 12.1 */
-            animation: fadein 2.5s;
+			animation: fadein 2.5s;
+			
+	position: absolute;
 }
 
 #slide1 img {
 	filter: grayscale(100%);
 	opacity: 0.2;
-	position: absolute;
+	/* position: absolute; */
 	transform: translate(-50%, 50%);
-	left: 50%;
-	bottom: 50%;
+	/* left: 50%;
+	bottom: 50%; */
 	width: 400px;
 	
 }
@@ -520,6 +530,7 @@ main.content {
 	background-size: cover;
 	display: flex;
 	align-items: center;
+	overflow: hidden;
 }
 
 #slide2{
@@ -532,24 +543,24 @@ main.content {
 	width: 100%;
 }
 
-/* #slide3{
+#slide3{
 	background: url('/assets/img/leaves.PNG') 50% 0 no-repeat fixed;
-	color: #fff;
 	height: 75vh;
 	background-size: cover;
 	width: 100%;
 	background-attachment: fixed;
 	display: flex;
 	align-items: center;
-} */
+	overflow: hidden;
+}
 
-#slide3 {
+/* #slide3 {
 	background: transparent;
 	height: 75vh;
 	width: 100%;
     display: flex;
     align-items: center;
-}
+} */
 
 #slide-works{
 	background-color:black;
@@ -890,11 +901,12 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	.modal .close{
 		position: absolute;
 		top: 20px;
-		right: 30px;
+		right: 40px;
 		font-size: 50px;
-		font-weight: normal;
+		font-weight: lighter;
 		text-decoration: none;
 		color: #333;
+		z-index: 999;
 	}
 	
 	.modal h2{
@@ -902,10 +914,14 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		color: #333;
 		margin-top: 0;
 		padding-top: 5%;
+		font-weight: lighter;
+		font-size: 50px;
+		text-align: left;
+		padding: 10% 0;
 	}
 	
 	.modal-content{
-		max-height: 80%;
+		max-height: 100%;
 		overflow-y: scroll;
 		padding: 0 15%;
 		text-align: left;
@@ -939,7 +955,6 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
 	.modal-text {
 		font-size: 1.5em;
-		padding-top: 5%;
 	}
 
 	.noanimated {
@@ -1075,20 +1090,20 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		width: 100%;
 	}
 
-	/* #slide3{
+	#slide3{
 		background: url('/assets/img/leaves.PNG') 50% 0 no-repeat fixed;
 		color: #fff;
-		height: 75%;
+		height: 75vh;
 		background-size: cover;
 		width: 100%;
 		background-attachment: fixed;
-	} */
+	}
 
-	#slide3 {
+	/* #slide3 {
 		background: transparent;
 		height: 75vh;
 		width: 100%;
-	}
+	} */
 
 	#slide4{
 		background-color:#fff;
@@ -1239,8 +1254,8 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	}
 
 	.modal h2 {
-		padding-top: 20%;
-		font-size: 30px;
+		padding: 35% 0 20% 0;
+		font-size: 40px;
 	}
 
 	.modal-content {
@@ -1248,7 +1263,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	}
 
 	.modal-text {
-		font-size: 1em;
+		font-size: 1.2em;
 	}
 	
 	#footer {
@@ -1280,20 +1295,20 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		height: auto;
 	}
 
-	/* #slide3{
+	#slide3{
 		background: url('/assets/img/leaves.PNG') 50% 0 no-repeat fixed;
 		color: #fff;
-		height: 75%;
+		height: 75vh;
 		background-size: cover;
 		width: 100%;
 		background-attachment: fixed;
-	} */
+	}
 
-	#slide3 {
+	/* #slide3 {
 		background: transparent;
 		height: 75vh;
 		width: 100%;
-	}
+	} */
 
 	.content2{
 		width: 80%;

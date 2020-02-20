@@ -13,9 +13,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
     <script src="/assets/js/parallax.min.js"></script>
     <script src="/assets/js/lsPreloader.js"></script>
+    
+    
    
     <title>connor thorson</title>
 
+    
   </head>
   <body>
   <div class="preload">
@@ -40,7 +43,7 @@
     <div id="slide1">
       <div class="content">
         <div id="connor">connor thorson</div>
-        <img src="https://source.unsplash.com/collection/9351748" alt="">
+        <img src="https://source.unsplash.com/collection/9351748" alt="" class="rellax" data-rellax-speed="-2">
             
             <section id="scrollarrow">
                 <a href="#slide2"><span></span></a>
@@ -69,7 +72,8 @@
       </div> <!-- end content -->
     </div> <!-- end slide2 -->
 
-    <div id="slide3" data-parallax="scroll" data-image-src="/assets/img/leaves.PNG">
+    <!-- <div id="slide3" data-parallax="scroll" data-image-src="/assets/img/leaves.PNG"> -->
+      <div id="slide3">
       <div class="content">
             
         <div id="anim"> <!--id anim class slideup-->
@@ -174,7 +178,7 @@
     </footer>
 
     
-    <script src="/assets/js/main.js"></script>
+    
     <script type="text/javascript" src="/assets/js/smoothscroll.js"></script>
     <script>
       $('.preload').lsPreloader({
@@ -192,7 +196,13 @@
         animationComplete: "fade",
         minimumTime: .5
       });</script>
+      
+    </div> <!-- end preload -->
     
-    </div>
+    <script src="/assets/js/rellax.min.js"></script>
+    <script>var rellax = new Rellax('.rellax');</script>
+
+    <script src="/assets/js/main.js"></script>
+
   </body>
 </html>
