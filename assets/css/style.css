@@ -839,6 +839,8 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		font-family: Avenir, Helvetica, sans-serif;
 		font-weight: normal;
 		font-size: 3rem;
+		background: white;
+		margin: 0;
 	}
 
 	.card-container {
