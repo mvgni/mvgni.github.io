@@ -4,7 +4,7 @@
   "description": "<h3><a href=\"https://mvgni.github.io\">mvgni.github.io</a></h3>",
   "main": "main.js",
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery-parallax.js": "^1.5.0"
   },
   "devDependencies": {},
