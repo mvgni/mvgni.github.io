@@ -256,6 +256,7 @@ h1.wd {
 	text-align:center;
 	margin:0;
 	font-family: Avenir, Helvetica, sans-serif;
+	padding-bottom: 10vh;
 }
 
 h1.contact {
@@ -805,7 +806,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		text-align: center;
 		margin:0;
 		font-family: Avenir, Helvetica, sans-serif;
-		padding-bottom: 15vh;
+		padding-bottom: 10vh;
 	}
 
 	.skills-container {
