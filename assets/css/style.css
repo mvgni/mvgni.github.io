@@ -596,10 +596,6 @@ main.content {
 	font-size: 25px;
 }
 
-#slide2 .content2 {
-	padding: 40vh 0 40vh 0;
-}
-
 #slide3 .content {
 	display: flex;
 	place-items: center center;
