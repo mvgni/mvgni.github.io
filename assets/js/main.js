@@ -137,7 +137,7 @@ $(".p-2").hover(function() {
 });
 
 $(".p-3").hover(function() {
-  $(".cursor").css({ "background-image": "url(unite-cover.png)" });
+  $(".cursor").css({ "background-image": "url(gunnar-cover.png)" });
 });
 
 $(".p-4").hover(function() {
@@ -166,7 +166,7 @@ $('.p-2').click(function() {
 })
 
 $('.p-3').click(function() {
-  window.location.href="portfolio.html#unite-modal"
+  window.location.href="portfolio.html#gunnar-modal"
 })
 
 $('.p-4').click(function() {
