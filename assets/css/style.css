@@ -1355,7 +1355,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	}
 
 	.work-title {
-		padding: 250px 90px;
+		padding: 250px 0;
 	}
     
 }
