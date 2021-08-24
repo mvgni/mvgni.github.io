@@ -1,7 +1,26 @@
-@import url(https://fonts.googleapis.com/css?family=Quicksand);
-@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
 @import url('https://fonts.googleapis.com/css?family=Cormorant&display=swap');
-
+@font-face {
+	font-family: 'Harmond';
+	src: url('/assets/fonts/Harmond-SemiBoldCondensed.otf');
+}
+@font-face {
+	font-family: 'Harmond-Bold';
+	src: url('/assets/fonts/Harmond-ExtraBoldExpanded.otf');
+}
+@font-face {
+	font-family: 'Maghfirea';
+	src: url('/assets/fonts/Maghfirea.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Kenoky';
+	src: url('/assets/fonts/KenokyLight.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Bigilla';
+	src: url('/assets/fonts/Bigilla.otf');
+}
 
 
 body{
@@ -251,11 +270,11 @@ h1.pf a {
 
 h1.wd {
 	font-weight:lighter;
-	font-size:50px;
+	font-size:80px;
 	text-transform: lowercase;
 	text-align:center;
 	margin:0;
-	font-family: Avenir, Helvetica, sans-serif;
+	font-family: Harmond-bold, serif;
 	padding-bottom: 10vh;
 }
 
@@ -398,7 +417,7 @@ main.content {
 
 .text {
 	font-weight: normal;
-	font-size: 20px;
+	font-size: 2rem;
 	text-align: left;
 	font-family: Avenir, Helvetica, sans-serif;
 }
@@ -446,6 +465,45 @@ main.content {
 	top: 275px;
 }
 
+.link-anim::after {
+	content: '';
+	position: absolute;
+	bottom: 20%;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #bbb;
+	opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+  }
+  
+  .link-anim:hover::after,
+  .link-anim:focus::after {
+	opacity: 1;
+	transform: translate3d(0, 0.2em, 0);
+  }
+  .link-anim {
+	  transition: 1s;
+	  overflow: hidden;
+	  display: block;
+	position: relative;
+	padding: 0.2em 0;
+  }
+  .link-anim.link-anim_lrg a {
+	color: white;
+	font-family: Bigilla, serif;
+	font-size: 200px;
+	text-decoration: none;
+  }
+  .link-anim::after {
+	opacity: 1;
+	transform: translate3d(-100%, 0, 0);
+  }
+  .link-anim:hover::after,
+  .link-anim:focus::after{
+	transform: translate3d(0, 0, 0);
+  }
+
 
 
 /*
@@ -460,8 +518,8 @@ main.content {
 } */
 
 #connor {
-	font-family: Cormorant, serif;
-	font-size: 100px;
+	font-family: Bigilla, serif;
+	font-size: 250px;
 	text-align: center;
 	font-weight: lighter;
 /* 	padding-top: 40vh;
@@ -801,11 +859,11 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
 	.skills {
 		font-weight:lighter;
-		font-size:50px;
+		font-size:80px;
 		text-transform: lowercase;
 		text-align: center;
 		margin:0;
-		font-family: Avenir, Helvetica, sans-serif;
+		font-family: Harmond-bold, serif;
 		padding-bottom: 10vh;
 	}
 
@@ -833,9 +891,9 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	.work-title {
 		text-align: center;
 		padding: 15vh;
-		font-family: Avenir, Helvetica, sans-serif;
+		font-family: Harmond-bold, serif;
 		font-weight: normal;
-		font-size: 3rem;
+		font-size: 80px;
 		background: white;
 		margin: 0;
 	}
@@ -925,14 +983,15 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	}
 	
 	.modal h2{
-		font-family: Avenir, Helvetica, sans-serif;
+		font-family: Harmond-bold, serif;
 		color: #333;
 		margin-top: 0;
 		padding-top: 5%;
 		font-weight: lighter;
-		font-size: 50px;
+		font-size: 100px;
 		text-align: left;
 		padding: 10% 0;
+		text-transform: lowercase;
 	}
 	
 	.modal-content{
@@ -1002,6 +1061,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
 	.project-title {
 		font-weight: lighter;
+		font-family: Harmond-bold, serif;
 	}
 	
 	.cursor {
@@ -1068,8 +1128,8 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 @media only screen and (max-width: 600px) {
     
     #connor {
-	font-family: Cormorant, sans-serif;
-	font-size: 50px;
+	font-family: Bigilla, sans-serif;
+	font-size: 150px;
 	text-align: center;
 /*    padding-top: 62%;*/
 
@@ -1279,7 +1339,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	}
 
 	.modal-text {
-		font-size: 1.2em;
+		font-size: 1.5em;
 	}
 	
 	#footer {
@@ -1288,6 +1348,14 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
 	main.content {
 		margin-bottom: 150px;
+	}
+
+	.link-anim_lrg a {
+		font-size: 90px !important;
+	}
+
+	.work-title {
+		padding: 250px 90px;
 	}
     
 }

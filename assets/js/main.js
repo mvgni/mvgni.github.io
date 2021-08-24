@@ -144,6 +144,26 @@ $(".p-4").hover(function() {
   $(".cursor").css({ "background-image": "url(vouloir-cover.png)" });
 });
 
+$(".pnt").hover(function() {
+  $(".cursor").css({ "background-image": "url(pnt-cover.png)" });
+});
+
+$(".disc").hover(function() {
+  $(".cursor").css({ "background-image": "url(disc-cover.png)" });
+});
+
+$(".gunnar").hover(function() {
+  $(".cursor").css({ "background-image": "url(gunnar-cover.png)" });
+});
+
+$(".vou").hover(function() {
+  $(".cursor").css({ "background-image": "url(vouloir-cover.png)" });
+});
+
+$(".map").hover(function() {
+  $(".cursor").css({ "background-image": "url(sc-cover.png)" });
+});
+
 var flag = false;
 $($overlay).mousemove(function() {
   flag = true;
@@ -172,6 +192,19 @@ $('.p-3').click(function() {
 $('.p-4').click(function() {
   window.location.href="portfolio.html#vou-modal"
 })
+
+
+function pItemInteract(item) {
+  $(item).click(() => {
+    window.location.href="#" + $(item) + "-modal"
+  })
+}
+
+function pItemHover(item) {
+  $(item).hover(() => {
+    $(".cursor").css({ "background-image": "url(" + item + "-cover.png)" })
+  })
+}
 
 
     
