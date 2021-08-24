@@ -1129,7 +1129,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     
     #connor {
 	font-family: Bigilla, sans-serif;
-	font-size: 150px;
+	font-size: 120px;
 	text-align: center;
 /*    padding-top: 62%;*/
 
@@ -1351,7 +1351,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	}
 
 	.link-anim_lrg a {
-		font-size: 60px !important;
+		font-size: 90px !important;
 	}
 
 	.work-title {
