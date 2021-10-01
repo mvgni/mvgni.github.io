@@ -1327,6 +1327,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
 	.card {
 		width: initial;
+		height: 500px;
 	}
 
 	.modal h2 {
