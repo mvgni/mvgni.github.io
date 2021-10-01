@@ -15,8 +15,8 @@
 		pulseNormalize: 1,
 
 		// Acceleration
-		accelerationDelta: 50, // 50
-		accelerationMax: 3, // 3
+		accelerationDelta: 100, // 50
+		accelerationMax: 5, // 3
 
 		// Keyboard Settings
 		keyboardSupport: true, // option
