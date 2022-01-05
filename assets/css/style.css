@@ -21,6 +21,10 @@
 	font-family: 'Bigilla';
 	src: url('/assets/fonts/Bigilla.otf');
 }
+@font-face {
+	font-family: 'Tangerine';
+	src: url('/assets/fonts/Tangerine.otf');
+}
 
 
 body{
@@ -268,13 +272,13 @@ h1.pf a {
 .myImg:hover {opacity: 0.7;}
 
 
-h1.wd {
+.wd {
 	font-weight:lighter;
 	font-size:80px;
 	text-transform: lowercase;
 	text-align:center;
 	margin:0;
-	font-family: Harmond-bold, serif;
+	font-family: Tangerine, serif;
 	padding-bottom: 10vh;
 }
 
@@ -301,7 +305,7 @@ p {
 
 #footer {
 	width: 100%;
-	height: 100px;
+	height: 200px;
 	background: #262626;
 	position: fixed;
 	bottom: 0;
@@ -355,18 +359,18 @@ h3{
 }
 
 main.content {
-	margin-bottom: 100px;
+	margin-bottom: 200px;
 }
 
 .content2{
 	/* width: 80%; */
 	margin: 0 auto;
-	padding: 30vh 0 30vh 0;
+	padding: 20vh 0 20vh 0;
 }
 
 .content4, .content-works{
 	margin: 0 auto;
-	padding: 30vh 0 30vh 0;
+	padding: 15vh 0 15vh 0;
 }
 
 .clear{ 
@@ -424,14 +428,14 @@ main.content {
 
 .skill-text {
 	font-weight: normal;
-	font-size: 20px;
+	font-size: 25px;
 	font-family: Avenir, Helvetica, sans-serif;
 }
 
 .skill-label {
 	font-weight: normal;
-	font-size: 27px;
-	font-family: Avenir, Helvetica, sans-serif;
+	font-size: 35px;
+	font-family: Tangerine, Avenir, Helvetica, sans-serif;
 }
 
 .text-alt {
@@ -491,7 +495,7 @@ main.content {
   }
   .link-anim.link-anim_lrg a {
 	color: white;
-	font-family: Bigilla, serif;
+	font-family: Tangerine, serif;
 	font-size: 200px;
 	text-decoration: none;
   }
@@ -518,8 +522,8 @@ main.content {
 } */
 
 #connor {
-	font-family: Bigilla, serif;
-	font-size: 250px;
+	font-family: Tangerine, serif;
+	font-size: 215px;
 	text-align: center;
 	font-weight: lighter;
 /* 	padding-top: 40vh;
@@ -577,9 +581,10 @@ main.content {
 
 .flex-container {
 	display: flex;
-	width: 70%;
+	/* width: 70%; */
 	text-align: center;
 	margin: 0 auto;
+	max-width: 1200px;
 }
 
 
@@ -641,18 +646,18 @@ main.content {
 }
 
 #slide4{
-	background-color:#fff;
-	color: #333333;
+	background-color:#929c80;
+	color: #232323;
 	height: auto;
 	/*padding: 200px 0;*/
 	overflow: hidden;
 	margin: 0 auto;
 	width: 100%;
-	margin-bottom: 100px;
+	margin-bottom: 200px;
 }
 
 #slide2 .text {
-	font-size: 25px;
+	font-size: 50px;
 }
 
 #slide3 .content {
@@ -863,15 +868,18 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		text-transform: lowercase;
 		text-align: center;
 		margin:0;
-		font-family: Harmond-bold, serif;
+		font-family: Tangerine, serif;
 		padding-bottom: 10vh;
 	}
 
 	.skills-container {
 		display: flex;
-		width: 80vw;
+		/* width: 80vw; */
 		text-align: center;
 		margin: 0 auto;
+		flex-flow: wrap;
+		max-width: 1300px;
+		justify-content: center;
 	}
 
 	.sk > i {
@@ -879,8 +887,9 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	}
 
 	.sk {
-		padding: 0 20px;
-		width: 100%;
+		padding: 50px;
+		width: 450px;
+		min-height: 300px;
 	}
 
 	.footer-content p {
@@ -891,10 +900,10 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	.work-title {
 		text-align: center;
 		padding: 15vh;
-		font-family: Harmond-bold, serif;
+		font-family: Tangerine, serif;
 		font-weight: normal;
-		font-size: 80px;
-		background: white;
+		font-size: 135px;
+		background: #ebe1db;
 		margin: 0;
 	}
 
@@ -902,23 +911,23 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		text-align: center;
 		padding-bottom: 15vh;
 		margin-bottom: 100px;
-		background: white;
+		background: #ebe1db;
 	}
 
 	.card {
 		background: #fff;
 		border-radius: 2px;
 		display: inline-block;
-		height: 1000px;
-		width: 1000px;
+		height: 800px;
 		margin: 1rem;
 		position: relative;
+		width: 800px;
 		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 	}
 
 	.card:hover {
-		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+		/* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
 	}
 
 	.card img {
@@ -946,7 +955,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		left: 50%;
 		transform: translate(-50%, -50%);
 		text-align: center;
-		font-size: 1.6em;
+		font-size: 2.6em;
 		opacity: 0;
 		-webkit-transition: opacity 500ms;
 		-moz-transition: opacity 500ms;
@@ -964,7 +973,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
 	.modal{
 		margin: 0 auto;
-		background: white;
+		background: #ebe1db;
 		/* border-radius: 3px; */
 		width: 100%;
 		height: 100%;
@@ -983,7 +992,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	}
 	
 	.modal h2{
-		font-family: Harmond-bold, serif;
+		font-family: Tangerine, serif;
 		color: #333;
 		margin-top: 0;
 		padding-top: 5%;
@@ -1061,7 +1070,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
 	.project-title {
 		font-weight: lighter;
-		font-family: Harmond-bold, serif;
+		font-family: Tangerine, serif;
 	}
 	
 	.cursor {
@@ -1106,6 +1115,10 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		z-index: 1;
 	}
 
+.inactive {
+	display: none;
+}
+
 
 
 
@@ -1128,7 +1141,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 @media only screen and (max-width: 600px) {
     
     #connor {
-	font-family: Bigilla, sans-serif;
+	font-family: Tangerine, sans-serif;
 	font-size: 120px;
 	text-align: center;
 /*    padding-top: 62%;*/
@@ -1166,6 +1179,10 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		width: 100%;
 	}
 
+	#slide2 .text {
+		font-size: 40px;
+	}
+
 	/* #slide3{
 		background: url('/assets/img/leaves.PNG') 50% 0 no-repeat fixed;
 		color: #fff;
@@ -1182,15 +1199,15 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	} */
 
 	#slide4{
-		background-color:#fff;
-		color: #333333;
+		background-color:#929c80;
+		color: #232323;
 		/* height: 180%; */
 		height: auto;
 		/*padding: 200px 0;*/
 		overflow: hidden;
 		margin: 0 auto;
 		width: 100%;
-		margin-bottom: 150px;
+		margin-bottom: 250px;
 	}
 
 	#slide-works {
@@ -1327,7 +1344,6 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
 	.card {
 		width: initial;
-		height: 500px;
 	}
 
 	.modal h2 {
@@ -1344,11 +1360,11 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	}
 	
 	#footer {
-		height: 150px;
+		height: 250px;
 	}
 
 	main.content {
-		margin-bottom: 150px;
+		margin-bottom: 250px;
 	}
 
 	.link-anim_lrg a {
