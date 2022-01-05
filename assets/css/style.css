@@ -183,6 +183,7 @@ ul.social li {
 .nav-link {
 	position: fixed;
 	padding: 3em;
+	z-index: 999;
 }
 .nav-link a {
 	text-decoration: none;
