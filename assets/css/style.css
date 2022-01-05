@@ -496,7 +496,7 @@ main.content {
   .link-anim.link-anim_lrg a {
 	color: white;
 	font-family: Tangerine, serif;
-	font-size: 200px;
+	font-size: 160px;
 	text-decoration: none;
   }
   .link-anim::after {
@@ -523,7 +523,7 @@ main.content {
 
 #connor {
 	font-family: Tangerine, serif;
-	font-size: 215px;
+	font-size: 170px;
 	text-align: center;
 	font-weight: lighter;
 /* 	padding-top: 40vh;
@@ -658,7 +658,8 @@ main.content {
 }
 
 #slide2 .text {
-	font-size: 50px;
+	font-size: 45px;
+	padding: 20px
 }
 
 #slide3 .content {
@@ -1390,7 +1391,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	}
 
 	#slide2{
-		background-color: #fff;
+		background-color: #ebe1db;
 		color: #333333;
 		/* height: 60%; */
 		margin: 0 auto;
