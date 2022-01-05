@@ -129,19 +129,19 @@ TweenLite.to($cursor, 0.5, {
 });
 }
 $(".p-1").hover(function() {
-  $(".cursor").css({ "background-image": "url(pnt-cover.png)" });
+  $(".cursor").css({ "background-image": "url(pnt-cover-sm.jpg)" });
 });
 
 $(".p-2").hover(function() {
-  $(".cursor").css({ "background-image": "url(disc-cover.png)" });
+  $(".cursor").css({ "background-image": "url(disc-cover-sm.jpg)" });
 });
 
 $(".p-3").hover(function() {
-  $(".cursor").css({ "background-image": "url(gunnar-cover.png)" });
+  $(".cursor").css({ "background-image": "url(gunnar-cover-sm.jpg)" });
 });
 
 $(".p-4").hover(function() {
-  $(".cursor").css({ "background-image": "url(vouloir-cover.png)" });
+  $(".cursor").css({ "background-image": "url(vouloir-cover-sm.jpg)" });
 });
 
 $(".pnt").hover(function() {
@@ -202,7 +202,7 @@ function pItemInteract(item) {
 
 function pItemHover(item) {
   $(item).hover(() => {
-    $(".cursor").css({ "background-image": "url(" + item + "-cover.png)" })
+    $(".cursor").css({ "background-image": "url(" + item + "-cover-sm.jpg)" })
   })
 }
 
