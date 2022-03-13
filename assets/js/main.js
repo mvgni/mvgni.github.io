@@ -141,7 +141,7 @@ $(".p-3").hover(function() {
 });
 
 $(".p-4").hover(function() {
-  $(".cursor").css({ "background-image": "url(vouloir-cover-sm.jpg)" });
+  $(".cursor").css({ "background-image": "url(eis-cover-sm.jpg)" });
 });
 
 $(".pnt").hover(function() {
@@ -190,7 +190,7 @@ $('.p-3').click(function() {
 })
 
 $('.p-4').click(function() {
-  window.location.href="portfolio.html#vou-modal"
+  window.location.href="portfolio.html#eis-modal"
 })
 
 

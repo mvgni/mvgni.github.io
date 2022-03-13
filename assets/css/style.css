@@ -616,7 +616,7 @@ main.content {
 
 #slide1{
 /*	background: url('mtn2.jpg') 50% 0 no-repeat fixed; */
-	background: #b2753e;
+	background: #ebe1db; /*#b2753e;
 	color: #232323;
     width: 100%;
     /*min-height: 100%;*/
@@ -629,7 +629,7 @@ main.content {
 }
 
 #slide2{
-	background-color: #b2753e;
+	background-color: #ebe1db;
 	color: #232323;
 	/* height: 75%; */
 	height: auto;
@@ -1196,7 +1196,6 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	}
 
 	#slide2{
-		background-color: #b2753e;
 		color: #232323;
 		/* height: 115%; */
 		height: auto;
