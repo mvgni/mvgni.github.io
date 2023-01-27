@@ -982,6 +982,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		/*transform: translate(-50%, -50%);*/
 		text-align: left;
 		font-size: 2.6em;
+		text-transform: lowercase;
 		opacity: 0;
 		-webkit-transition: opacity 500ms;
 		-moz-transition: opacity 500ms;
